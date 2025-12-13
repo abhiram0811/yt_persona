@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parkerstyle"
+version = "0.1.0"
+description = "RAG-powered fashion advisor inspired by Parker York Smith"
+requires-python = ">=3.10"
+dependencies = [
+    "google-api-python-client>=2.0.0",
+    "youtube-transcript-api>=0.6.0",
+    "google-generativeai>=0.3.0",
+    "pinecone-client>=3.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["ingestion*", "processing*", "vectorstore*", "api*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

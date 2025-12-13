@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+api/__init__.py
+ingestion/__init__.py
+parkerstyle.egg-info/PKG-INFO
+parkerstyle.egg-info/SOURCES.txt
+parkerstyle.egg-info/dependency_links.txt
+parkerstyle.egg-info/requires.txt
+parkerstyle.egg-info/top_level.txt
+processing/__init__.py
+tests/test_youtube_client.py
+vectorstore/__init__.py

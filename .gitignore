@@ -1,0 +1,27 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Data files (don't commit raw data)
+data/raw/
+data/processed/
+data/state/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Next.js
+ui/next-app/node_modules/
+ui/next-app/.next/

@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: parkerstyle
+Version: 0.1.0
+Summary: RAG-powered fashion advisor inspired by Parker York Smith
+Requires-Python: >=3.10
+Requires-Dist: google-api-python-client>=2.0.0
+Requires-Dist: youtube-transcript-api>=0.6.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: pinecone-client>=3.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.23.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.0.0; extra == "dev"
