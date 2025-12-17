@@ -13,6 +13,12 @@ index = pc.Index(index_name)
 
 
 def upsert_chunk(chunk_id: str, text: str, metadata: dict):
-    index.upsert(vector=[{"id": chunk_id, "values": , "metadata": metadata}],
-    
+    embeddings = pc.inference.embed(
+        model="llama-text-embed-v2", inputs=[text], parameters={"input_type": "passage"}
+    )
+
+    vector_values = embeddings.data[0].values
+
+    index.upsert(
+        vectors=[{"id": chunk_id, "values": vector_values, "metadata": metadata}]
     )
