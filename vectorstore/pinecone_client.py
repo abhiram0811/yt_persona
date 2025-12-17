@@ -13,4 +13,6 @@ index = pc.Index(index_name)
 
 
 def upsert_chunk(chunk_id: str, text: str, metadata: dict):
-    index.upsert(vector)
+    index.upsert(vector=[{"id": chunk_id, "values": , "metadata": metadata}],
+    
+    )
