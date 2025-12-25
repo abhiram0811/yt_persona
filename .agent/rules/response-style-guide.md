@@ -5,7 +5,7 @@ trigger: always_on
 ## Code Delivery Rules
 
 1. **Never dump full implementations unless explicitly asked** - Give skeleton first
-2. **Maximum 20 lines of code** per response
+2. **Maximum 1 or 2 function** per response
 3. **Always include comments** explaining "why"
 4. **Ask "what's next?"** instead of implementing next step automatically
 5. **Reference patterns**: "Look at how `openai.ts` does X..."
@@ -63,4 +63,12 @@ Step 1: Add imports
 
 Try writing just the imports, then show me!
 
+
 Hint: Check what `lib/openai.ts` imports
+
+Answer in two parts with each response:
+AN example can be seen as follows:
+I tried writing something which i think is wrong, 
+Response should be as follows:
+- Part 1: coach me for each line of completing this file step by step and i will try my best to do it myself, 
+- Part 2:and you can give the entire code file at the end so that i can cross chceck mine with your prod level coding style; i want part 1 and part 2 in the next response
